@@ -1,5 +1,16 @@
 // Portfolio JavaScript
 
+// Loading Screen
+const loader = document.getElementById('loader');
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }, 2800);
+});
+// Prevent scrolling while loading
+document.body.style.overflow = 'hidden';
+
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
